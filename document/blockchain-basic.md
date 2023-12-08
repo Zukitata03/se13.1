@@ -7,19 +7,19 @@ Trong kiến trúc phân tán của Blockchain, mỗi thành viên tham gia mạ
 
 ![Blockchain bao gồm các tầng](https://github.com/Zukitata03/se13.1/assets/93626176/34bc8b41-cc0c-45b2-8c4c-aaf507846ac5)
 
-1.Lớp hạ tầng: 
+1. **Lớp hạ tầng**: 
   - Là các phần cứng thực thi các smart contract và các ứng dụng khác.
   - Cây Merkle: là một cây nhị phân của hàm băm. 
-2. Lớp dữ liệu:
+2. **Lớp dữ liệu**:
   - Khối: Chứa các giao dịch được xác thực và sắp xếp theo thứ tự thời gian.
   - Mạng: Các nút mạng, truyền thông và xác minh. Giúp xác minh tính toàn vẹn của dữ liệu trong một khối.
   - Chữ ký số: Đảm bảo tính bảo mật và tính xác thực của giao dịch.
-3. Lớp mạng:
+3. **Lớp mạng**:
   - Mạng ngang hàng (P2P): Mỗi thành viên có một bản sao blockchain, cho phép họ xác thực và cập nhật thông tin.
   - Cấu trúc liên kết: Blockchain được tạo thành từ các khối có liên kết với nhau, đảm bảo tính toàn vẹn và truy xuất nguồn gốc.
-4. Lớp đồng thuận:
+4. **Lớp đồng thuận**:
   -  Cơ chế đồng thuận: Đảm bảo tất cả các nút đồng ý về trạng thái của blockchain.
   -  Các thuật toán đồng thuận phổ biến: Proof of Work (PoW), Proof of Stake (PoS).
-5. Lớp ứng dụng:
+5. **Lớp ứng dụng**:
   - Smart contract: Các chương trình chạy trên blockchain và tự động thực thi các giao dịch.
   - Các ứng dụng phi tập trung (DApps): Các ứng dụng được xây dựng trên blockchain và không có chủ sở hữu duy nhất.
