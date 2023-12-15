@@ -10,11 +10,12 @@ Hai đồng tiền điện tử nổi tiếng với cơ chế đồng thuận n�
 ## Proof-of-Stake (PoS):
 Thay vì yêu cầu giải các bài toán phức tạp, Proof-of-Stake chọn người xác thực dựa trên cổ phần sở hữu của họ trong mạng. Không có cạnh tranh để tạo ra hàm băm phù hợp, mà dựa trên quyền sở hữu của nguồn cung. Sức mạnh tính toán được thay bằng sức mạnh tiền tệ, nên xác thực các giao dịch phụ thuộc vào cổ phần của người đang muốn xác thực.
 Thay vì nhận được phần thưởng khi giải khối, người xác thực có thể nhận được phí giao dịch hoặc phí mạng. Họ chịu trách nhiệm xác thực các giao dịch, ký và đề xuất các khối để xác thực. Quá trình này thực hiện thông qua các hợp đồng thông minh (smart contract).
-![image](https://github.com/Zukitata03/se13.1/assets/93626176/b44b558a-bfd5-40d0-91ae-460ebe6f193b)
 
 
 Thuật ngữ "đặt cược (stake)" dùng để chỉ những người xác thực giao tiền của họ cho hệ thống. Người xác thực có thể tham gia vào việc tạo khối mới nếu họ khóa số token mình đang nắm giữ. Ví dự, người xác nhận nắm giữ 50% token trên hệ thống có thể xác thực 50% số khối. Số tiền bị khóa đóng vai trò là tài sản bị thế chấp, đảm bảo rằng nếu những người xác thực có gian lận trong quá trình xác thực, họ có khả năng mất số tiền và bị khai trừ khỏi hệ thống. Ngược lại, nếu mọi thứ trung thực, minh bạch thì sẽ nhận được phần thưởng. Vì vậy, trong Proof-of-Stake (PoS), sự đồng thuận đạt được bằng cách xem xét số cổ phần mà người xác thực đóng góp cho mạng.
 Solana và gần đây là ETH 2.0 (sau sự kiện The Merge) là hai đồng tiền điện tử sử dụng cơ chế đồng thuận PoS. Solana không chỉ sử dụng mỗi PoS mà còn cả Proof-of-History (PoH).
+![image](https://github.com/Zukitata03/se13.1/assets/93626176/b44b558a-bfd5-40d0-91ae-460ebe6f193b)
+
 
 ## Proof-of-History (PoH):
 Proof-of-History (PoH) là một cơ chế đồng thuận độc đáo được sử dụng bởi blockchain Solana. Khác với các cơ chế truyền thống, PoH không phụ thuộc vào thời gian thực mà tạo ra một chuỗi thời gian ảo (virtual clock) riêng trong blockchain.
