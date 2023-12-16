@@ -23,3 +23,15 @@ Trong kiến trúc phân tán của Blockchain, mỗi thành viên tham gia mạ
 5. **Lớp ứng dụng**:
   - Smart contract: Các chương trình chạy trên blockchain và tự động thực thi các giao dịch.
   - Các ứng dụng phi tập trung (DApps): Các ứng dụng được xây dựng trên blockchain và không có chủ sở hữu duy nhất.
+## Workflow cơ bản của blockchain
+![BC workflow](https://github.com/Zukitata03/se13.1/assets/93626176/d7d1a8d7-be9e-4fd4-a005-d57fb074c729)
+1. Bên A tạo một giao dịch với bên B.
+2. Các giao dịch tương đồng chưa được xác thực sẽ được nhóm vào một khối cho đến khi khối đầy.
+3. Dữ liệu trong khối sẽ được xác thực bằng thuật toán đồng thuận để kiểm tra tính hợp lệ của thông tin trong khối. Các nốt (nodes) sẽ cạnh tranh nhau xác thực được bằng cách giải khối, nốt (nodes) xác thực được giao dịch sẽ nhận thưởng.
+4. Sau khi khối được xác thực, tiến hành cập nhật khối vào chuỗi, khi đó, giao dịch hoàn tất.
+
+## Đặc điểm chính của blockchain
+1. **Phi tập trung (Dencentralized)**: Không có bên thứ ba nào đứng ra kiểm soát mạng lưới blockchain. Mọi người tham gia vào mạng lưới đều có quyền truy cập và ghi dữ liệu lên blockchain.
+2. **Bất biến (Immutability)**: Một khi dữ liệu đã được ghi lên blockchain, nó sẽ được lưu vĩnh viễn, không thể bị xoắ hay sửa đổi.
+3. **Đồng thuận (Concensus)**: Các nút (nodes) đồng thuận với nhau để xác thực các giao dịch trước khi được lưu lên chuỗi. Quy trình đồng thuận đảm bảo rằng giao dịch là hợp lệ, không có gian lận.
+4. **Nguồn gốc (Provanance)**: Mỗi giao dịch đều có một trình tự riêng và nguồn gốc khác nhau. Vì thế, blockchain có thể được sử dụng để theo dõi nguồn gốc của các tài sản. Điều này giúp đảm bảo tính xác thực và minh bạch của các tài sản.
