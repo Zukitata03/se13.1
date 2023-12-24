@@ -1,7 +1,7 @@
 {
   "name": "se13.1",
   "version": "1.0.0",
-  "description": "SE2023 - Chủ đề 13: Tìm hiểu về blockchain, quy trình release một mã tiền điện tử dựa trên Ethereum hoặc BSC, demo thử nghiệm tạo contract của 1 đồng tiền, minting NFT và kết nối ví.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,8 +26,5 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.0",
     "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^5.0.1"
   }
 }
