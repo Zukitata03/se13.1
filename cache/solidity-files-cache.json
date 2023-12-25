@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\Blockchain\\se13.1\\contracts\\Token.sol": {
-      "lastModificationDate": 1703429061331,
-      "contentHash": "78d5ffaa753ce9dab9df6559f19b7d61",
+      "lastModificationDate": 1703514587108,
+      "contentHash": "dff01f361b20df98d2c64e1467b60ad4",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
         "version": "0.8.19",

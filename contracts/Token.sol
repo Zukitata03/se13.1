@@ -11,7 +11,7 @@ contract DHAToken is
 {
     uint256 private cap = 50_000_000_000 * 10**uint256(18);
     constructor() {
-
+        console.log("owner: %s maxcap: %s", msg.sender, cap);
         _mint(msg.sender, cap);
         transferOwnership(msg.sender);
     }
