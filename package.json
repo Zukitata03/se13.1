@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts --network",
+    "test": "hardhat test",
+    "verify": "hardhat verify --network"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +33,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "debug": "^4.3.1"
+    "debug": "^4.3.1",
+    "dotenv": "^16.3.1"
   }
 }
