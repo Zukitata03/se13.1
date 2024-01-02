@@ -18,9 +18,6 @@ contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
         Ownable(initialOwner)
     {}
 
-    function _baseURI() internal pure override returns (string memory) {
-        return "ipfs://Qmaa6TuP2s9pSKczHF4rwWhTKUdygrrDs8RmYYqCjP3Hye/";
-    }
 
     function pause() public onlyOwner {
         _pause();
