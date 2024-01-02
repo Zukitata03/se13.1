@@ -8,8 +8,6 @@ export type { openzeppelinSolidity };
 export * as factories from "./factories";
 export type { DHACrowdSale } from "./contracts/DHACrowdsale.sol/DHACrowdSale";
 export { DHACrowdSale__factory } from "./factories/contracts/DHACrowdsale.sol/DHACrowdSale__factory";
-export type { FLPCrowdSale } from "./contracts/DHACrowndsale.sol/FLPCrowdSale";
-export { FLPCrowdSale__factory } from "./factories/contracts/DHACrowndsale.sol/FLPCrowdSale__factory";
 export type { DHAToken } from "./contracts/DHAToken";
 export { DHAToken__factory } from "./factories/contracts/DHAToken__factory";
 export type { T1 } from "./contracts/T1";

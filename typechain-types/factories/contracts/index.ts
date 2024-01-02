@@ -2,6 +2,5 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as dhaCrowdsaleSol from "./DHACrowdsale.sol";
-export * as dhaCrowndsaleSol from "./DHACrowndsale.sol";
 export { DHAToken__factory } from "./DHAToken__factory";
 export { T1__factory } from "./T1__factory";

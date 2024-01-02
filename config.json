@@ -1,8 +1,9 @@
 {
   "dev": {},
   "bsctest": {
-    "T1": "0x8791AB2f281C05d664F0117f7dC9aC501C3c79a4",
-    "ico": "0x77Ca7911A899683c0c580937eAA538ee12A0FaA6"
+    "T1": "0x2308ea0c13dF876cb0Ea71A6ca131626b0F166fD",
+    "ico": "0x588Ecd4949fdCC166BD463B564a58050f9C32E65",
+    "DHA": "0xc1A73647835A48A3AedEc81C89e6EDeC40954f30"
   },
   "main": {}
 }

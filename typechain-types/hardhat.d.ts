@@ -18,10 +18,6 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.DHACrowdSale__factory>;
     getContractFactory(
-      name: "FLPCrowdSale",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.FLPCrowdSale__factory>;
-    getContractFactory(
       name: "DHAToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.DHAToken__factory>;
@@ -52,11 +48,6 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.DHACrowdSale>;
     getContractAt(
-      name: "FLPCrowdSale",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.FLPCrowdSale>;
-    getContractAt(
       name: "DHAToken",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -92,10 +83,6 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.DHACrowdSale>;
     deployContract(
-      name: "FLPCrowdSale",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.FLPCrowdSale>;
-    deployContract(
       name: "DHAToken",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.DHAToken>;
@@ -125,11 +112,6 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.DHACrowdSale>;
-    deployContract(
-      name: "FLPCrowdSale",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.FLPCrowdSale>;
     deployContract(
       name: "DHAToken",
       args: any[],

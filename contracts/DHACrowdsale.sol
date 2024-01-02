@@ -66,7 +66,7 @@ contract DHACrowdSale is Ownable {
     function buyTokenByT1(uint256 T1Amount) external {
         uint256 amount = getTokenAmountT1(T1Amount);
         require(
-            msg.sender.balance >= T1Amount,
+            token.balanceOf(address(this)) == T1Amount,
             "Insufficient account balance"
         );
         require(amount > 0, "Amount is zero");
