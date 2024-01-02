@@ -428,10 +428,10 @@
 	},
 	"sources": {
 		"contracts/DHB_flattened.sol": {
-			"keccak256": "0x99efbcb2718bf4fbbd69d6b6992d5c7399904e713cb056403d1743f2f14743d6",
+			"keccak256": "0x587f2c7fc26f6a98a3c7973afcea71a1ee83c72243d109a8ac67a00e35d76f3b",
 			"urls": [
-				"bzz-raw://6e73f364f50596e3b59d2993ec0be8474028ce3079fe423a3957ec1b4662efc0",
-				"dweb:/ipfs/QmXjnZSn2Mft8hukmJnKGNdszd9JgHES8W7wtCbhnyFkAZ"
+				"bzz-raw://fe1e744ffc38e8e13fa8f47afae92ed355915e6e800df02f6452bc8a3ae37641",
+				"dweb:/ipfs/Qmcqegz9bfJNbFmvV6sVh7yDum8o6R4D1oZqngGfrNKkyr"
 			]
 		}
 	},

@@ -15,7 +15,7 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY]
     },
     eth: {
-      url: process.env.PROVIDER_URL,
+      url: "https://eth-sepolia.g.alchemy.com/v2/zJJW_aLX9rkL88RgCuiRPHxjR-70jyBz",
       account: [`${process.env.ETH_PRIVATE_KEY}`]
     }
   },

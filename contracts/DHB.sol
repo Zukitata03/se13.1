@@ -5,8 +5,8 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-
-contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+contract DatHieuBin is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Pausable, Ownable {
     uint256 private _nextTokenId;
     uint256 maxSupply = 100;
     bool public publicMintOpen = false;
@@ -33,6 +33,15 @@ contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
         }
     }
 
+    function tokenURI(uint256 tokenId)
+        public
+        view
+        override(ERC721, ERC721URIStorage)
+        returns (string memory)
+    {
+        return super.tokenURI(tokenId);
+    }
+
     function editMintWindows(
         bool _publicMintOpen,
         bool _allowistMintOpen
@@ -44,23 +53,25 @@ contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
 
     // Add Payment
     // Add supply limitations
-    function publicMint() public payable {
+    function publicMint(string memory uri) public payable {
         require(publicMintOpen, "Public Mint Closed");
         require(msg.value == 0.01 ether, "Khong du tien"); 
-        internalMint();
+        internalMint(uri);
+        
     }
     // Only people with permission can mint nft with lower fee
-    function allowistMint() public payable {
+    function allowistMint(string memory uri) public payable {
         require(allowistMintOpen, "Allowist Mint Closed");
         require(allowList[msg.sender], "Ban khong co quyen!");
         require(msg.value == 0.0001 ether, "Khong du tien");
-        internalMint();
+        internalMint(uri);
     }
 
-    function internalMint() internal {
+    function internalMint(string memory uri) internal {
         require(totalSupply() < maxSupply, "Khong con NFT!");
         uint256 tokenId = _nextTokenId++;
         _safeMint(msg.sender, tokenId);
+        _setTokenURI(tokenId, uri);
     }
 
 
@@ -85,7 +96,7 @@ contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721, ERC721Enumerable)
+        override(ERC721, ERC721Enumerable, ERC721URIStorage)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
