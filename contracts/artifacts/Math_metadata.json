@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "MathOverflowedMulDiv",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"details": "Standard math utilities missing in the Solidity language.",
+			"errors": {
+				"MathOverflowedMulDiv()": [
+					{
+						"details": "Muldiv operation overflow."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DHB_flattened.sol": "Math"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DHB_flattened.sol": {
+			"keccak256": "0x587f2c7fc26f6a98a3c7973afcea71a1ee83c72243d109a8ac67a00e35d76f3b",
+			"urls": [
+				"bzz-raw://fe1e744ffc38e8e13fa8f47afae92ed355915e6e800df02f6452bc8a3ae37641",
+				"dweb:/ipfs/Qmcqegz9bfJNbFmvV6sVh7yDum8o6R4D1oZqngGfrNKkyr"
+			]
+		}
+	},
+	"version": 1
+}

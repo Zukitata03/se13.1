@@ -226,6 +226,38 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_fromTokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_toTokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "BatchMetadataUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "MetadataUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "previousOwner",
@@ -312,7 +344,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
+					}
+				],
 				"name": "allowistMint",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -495,7 +533,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
+					}
+				],
 				"name": "publicMint",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -752,19 +796,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -874,6 +905,12 @@
 				"ApprovalForAll(address,address,bool)": {
 					"details": "Emitted when `owner` enables or disables (`approved`) `operator` to manage all of its assets."
 				},
+				"BatchMetadataUpdate(uint256,uint256)": {
+					"details": "This event emits when the metadata of a range of tokens is changed. So that the third-party platforms such as NFT market could timely update the images and related attributes of the NFTs."
+				},
+				"MetadataUpdate(uint256)": {
+					"details": "This event emits when the metadata of a token is changed. So that the third-party platforms such as NFT market could timely update the images and related attributes of the NFT."
+				},
 				"Paused(address)": {
 					"details": "Emitted when the pause is triggered by `account`."
 				},
@@ -931,9 +968,6 @@
 				"tokenOfOwnerByIndex(address,uint256)": {
 					"details": "See {IERC721Enumerable-tokenOfOwnerByIndex}."
 				},
-				"tokenURI(uint256)": {
-					"details": "See {IERC721Metadata-tokenURI}."
-				},
 				"totalSupply()": {
 					"details": "See {IERC721Enumerable-totalSupply}."
 				},
@@ -974,6 +1008,30 @@
 			"urls": [
 				"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
 				"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC165.sol": {
+			"keccak256": "0xde7e9fd9aee8d4f40772f96bb3b58836cbc6dfc0227014a061947f8821ea9724",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://11fea9f8bc98949ac6709f0c1699db7430d2948137aa94d5a9e95a91f61a710a",
+				"dweb:/ipfs/QmQdfRXxQjwP6yn3DVo1GHPpriKNcFghSPi94Z1oKEFUNS"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC4906.sol": {
+			"keccak256": "0xb31b86c03f4677dcffa4655285d62433509513be9bafa0e04984565052d34e44",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a89c6fb0cd5fef4244500b633f63def9f2bb2134debb961e590bd5a2910662fd",
+				"dweb:/ipfs/QmNqWyCxyopvb99RbRomPpfTZGXRi5MnzgpFXE2BFLLgMc"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC721.sol": {
+			"keccak256": "0xc4d7ebf63eb2f6bf3fee1b6c0ee775efa9f31b4843a5511d07eea147e212932d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01c66a2fad66bc710db7510419a7eee569b40b67cd9f01b70a3fc90d6f76c03b",
+				"dweb:/ipfs/QmT1CjJZq4eTNA4nu8E9ZrWfaZu6ReUsDbjcK8DbEFqwx5"
 			]
 		},
 		"@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
@@ -1022,6 +1080,14 @@
 			"urls": [
 				"bzz-raw://334002204a6c9af1bb233295dfae3052ea887c2f1913130fb931fe1b11692319",
 				"dweb:/ipfs/Qme5siHWg53YLWpXBb1rBTSRaTVbtWLnYUBa4Pjq2CYFpt"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+			"keccak256": "0xcc6f49e0c57072d6a18eef0d5fc22a4cc20462c18f0c365d2dd9a2c732fde670",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://24915e61c7896c336b60788408cd5792b97b782e98e392920a2c55eb1803fe96",
+				"dweb:/ipfs/QmVHhcmFnMYZBCjnVUk6f5quMCDsBR2j669a1nuMiGWY9Z"
 			]
 		},
 		"@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
@@ -1097,11 +1163,11 @@
 			]
 		},
 		"contracts/DHB.sol": {
-			"keccak256": "0x897a34e56bfa80fc4b0c17b5be684e7aca7c447ef03ea7e06fabaec9d338e0ea",
+			"keccak256": "0x4eb215bfaaa7b4a7096e939f92a50840cc8bd3c2e62ce2d6a384cf5d47ed9000",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f54179e65c5e7f49d0f2867a07404ae3513c49a58a966343176507b8bf527ac",
-				"dweb:/ipfs/Qmd8ye3Vnqqm8TkBTCe3Zx9FPUdaS93FPATMftDuqJ2Voj"
+				"bzz-raw://f6992579cda44e6d96dcce9788aa6801fa24b7e83cbd156237775f602058dd10",
+				"dweb:/ipfs/QmR8m76xZHbcf6gU3dEorVgbeJtxLwa2bjikwQWUyni9ZU"
 			]
 		}
 	},
