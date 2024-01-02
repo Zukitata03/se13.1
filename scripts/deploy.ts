@@ -14,7 +14,7 @@ async function main() {
     // Config.setConfig(network + '.T1', await t1.getAddress());
 
     const Ico = await ethers.getContractFactory("DHACrowdSale");
-    const ico = await Ico.deploy(1000,100,'0x4a42cd678681cc5149bE07295596f7F8D42fFfCB', '0x1668C71bba80dCcF05bAeC721D29aAaCc72003f3');
+    const ico = await Ico.deploy(1000,100,'0xCb9c20bD46cb5A0959b4aCD0bF26765184AB6F08', '0x1668C71bba80dCcF05bAeC721D29aAaCc72003f3');
     console.log('ICO address: ', ico.getAddress());
     Config.setConfig(network + '.ico', await ico.getAddress());
 
