@@ -1,6 +1,6 @@
-# Binace Smart Chain
+# Binance Smart Chain
 ## Định nghĩa
-Là một nền tảng blockchain đã được cải tiến hơn nhiều so với phiên bản Binace Chain gốc, nó chạy độc lập song song với bản cũ.
+Là một nền tảng blockchain đã được cải tiến hơn nhiều so với phiên bản Binance Chain gốc, nó chạy độc lập song song với bản cũ.
 
 ## Đặc điểm
 - Hỗ trợ smart contract, cho phép nhà phát triển triển khai các ứng dụng phi tập trung.
