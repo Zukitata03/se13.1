@@ -5,23 +5,24 @@ require('dotenv').config();
 module.exports = {
   solidity: {
     compilers: [
-      { version: "0.8.19" }, // Compiler for Token.sol
-      { version: "0.8.20" }  // Compiler for DHB.sol and other files (if applicable)
+      { version: "0.8.19", settings: {} }, // Compiler for Token.sol
+      { version: "0.8.20", settings: {} }, // Compiler for DHB.sol and other files (if applicable)
     ],
-    overrides: {
-      "contracts/Token.sol": {
-        version: "0.8.19",
-        settings: {}
-      }
-    }
   },
   networks: {
     bsctest: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
       accounts: [process.env.PRIVATE_KEY]
+    },
+    eth: {
+      url: process.env.PROVIDER_URL,
+      account: [`${process.env.ETH_PRIVATE_KEY}`]
     }
   },
   etherscan: {
-    apiKey: process.env.API_KEY
+    apiKey:{ 
+    bscscan: process.env.API_KEY,
+  etherscan: process.env.API_KEY_ETH}
+
   }
 };

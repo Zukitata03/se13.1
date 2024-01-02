@@ -18,6 +18,9 @@ contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
         Ownable(initialOwner)
     {}
 
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://emerald-wooden-gamefowl-472.mypinata.cloud/ipfs/QmcrnyLZr4y5tHcz1WmKGLWCYrUTEdC2GUfdkbBWhCn51w/";
+    }
 
     function pause() public onlyOwner {
         _pause();
@@ -46,14 +49,14 @@ contract DatHieuBin is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
     // Add supply limitations
     function publicMint() public payable {
         require(publicMintOpen, "Public Mint Closed");
-        require(msg.value == 0.01 ether, "Khong du tien");
+        require(msg.value == 0.02 ether, "Khong du tien");
         internalMint();
     }
     // Only people with permission can mint nft with lower fee
     function allowistMint() public payable {
         require(allowistMintOpen, "Allowist Mint Closed");
         require(allowList[msg.sender], "Ban khong co quyen!");
-        require(msg.value == 0.0001 ether, "Khong du tien");
+        require(msg.value == 0.0002 ether, "Khong du tien");
         internalMint();
     }
 

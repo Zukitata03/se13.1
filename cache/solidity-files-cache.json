@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "E:\\Homework\\SE\\se13.1\\contracts\\DHB.sol": {
-      "lastModificationDate": 1704157278984,
-      "contentHash": "55f46111665730e15be761e26ec4d0dc",
+      "lastModificationDate": 1704193897958,
+      "contentHash": "34c1153ec5c31eafd52713520491b41a",
       "sourceName": "contracts/DHB.sol",
       "solcConfig": {
         "version": "0.8.20",

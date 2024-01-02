@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.23+commit.f704f362"
+		"version": "0.8.22+commit.4fc1097e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -752,19 +752,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -1097,11 +1084,11 @@
 			]
 		},
 		"contracts/DHB.sol": {
-			"keccak256": "0x897a34e56bfa80fc4b0c17b5be684e7aca7c447ef03ea7e06fabaec9d338e0ea",
+			"keccak256": "0x1c4a48d25d3a6f1e98a9452181ee95df596dead690e1d73264a2a42c4ce20e96",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f54179e65c5e7f49d0f2867a07404ae3513c49a58a966343176507b8bf527ac",
-				"dweb:/ipfs/Qmd8ye3Vnqqm8TkBTCe3Zx9FPUdaS93FPATMftDuqJ2Voj"
+				"bzz-raw://13a5372d60250a43541b973e724bd159554a68e2e70357f72fdd40dcbc437fec",
+				"dweb:/ipfs/QmTHkru63DrCaikAw7VD3A3NJoC3tgow27s3QsYijfYtis"
 			]
 		}
 	},
