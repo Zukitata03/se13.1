@@ -85,8 +85,8 @@ export default function InvestCard({
                 </Text>
             </HStack>
 
-            <Button w="full" variant="primary" disabled={!walletInfo?.address || isBuying} onClick={onBuy}>
-                {isBuying ? <Spinner /> : 'Buy Now'}
+            <Button as="button" w="full" backgroundColor="yellow.500" disabled={!walletInfo?.address || isBuying} onClick={onBuy}>
+                {isBuying ? <Spinner fontWeight="bold"/> : 'Buy Now'}      
             </Button>
         </Box>
     );
