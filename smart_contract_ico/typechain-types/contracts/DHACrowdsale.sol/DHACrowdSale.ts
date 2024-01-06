@@ -272,7 +272,7 @@ export interface DHACrowdSale extends BaseContract {
   buyTokenByT1: TypedContractMethod<
     [T1Amount: BigNumberish],
     [void],
-    "nonpayable"
+    "payable"
   >;
 
   getTokenAmountBNB: TypedContractMethod<
@@ -341,7 +341,7 @@ export interface DHACrowdSale extends BaseContract {
   ): TypedContractMethod<[], [void], "payable">;
   getFunction(
     nameOrSignature: "buyTokenByT1"
-  ): TypedContractMethod<[T1Amount: BigNumberish], [void], "nonpayable">;
+  ): TypedContractMethod<[T1Amount: BigNumberish], [void], "payable">;
   getFunction(
     nameOrSignature: "getTokenAmountBNB"
   ): TypedContractMethod<[BNBAmount: BigNumberish], [bigint], "view">;

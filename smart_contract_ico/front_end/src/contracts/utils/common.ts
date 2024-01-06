@@ -21,6 +21,6 @@ export const getRPC = () => {
 }
 
 export const SMART_ADDRESS = {
-    CROWD_SALE: {97: '0x5D48aF8db6163c447a69cCEAEe363f8E4e011392', 56: ''},
+    CROWD_SALE: {97: '0x2d84694a6c04D73c5680a983b6C947fc0FA0A188', 56: ''},
     T1: {97: '0x2308ea0c13dF876cb0Ea71A6ca131626b0F166fD', 56: ''}
 }

@@ -63,21 +63,22 @@ contract DHACrowdSale is Ownable {
         emit BuyTokenByBNB(msg.sender, amount);
     }
 
-    function buyTokenByT1(uint256 T1Amount) external {
-        uint256 amount = getTokenAmountT1(T1Amount);
-        require(
-            token.balanceOf(address(this)) == T1Amount,
-            "Insufficient account balance"
-        );
-        require(amount > 0, "Amount is zero");
-        require(
-            token.balanceOf(address(this)) >= amount,
-            "Insufficient account balance"
-        );
-        SafeERC20.safeTransferFrom(t1Token, msg.sender, _wallet, T1Amount);
-        SafeERC20.safeTransfer(token, msg.sender, amount);
-        emit BuyTokenByT1(msg.sender, amount);
-    }
+function buyTokenByT1(uint256 T1Amount) external payable {
+    uint256 amount = getTokenAmountT1(T1Amount);
+    require(
+        t1Token.balanceOf(msg.sender) >= T1Amount,
+        "Insufficient account balance"
+    );
+    require(amount > 0, "Amount is zero");
+    require(
+        token.balanceOf(address(this)) >= amount,
+        "Insufficient account balance"
+    );
+    
+    SafeERC20.safeTransferFrom(t1Token, msg.sender, _wallet, T1Amount);
+    SafeERC20.safeTransfer(token, msg.sender, amount);
+    emit BuyTokenByT1(msg.sender, amount);
+}
 
     function getTokenAmountBNB(uint256 BNBAmount)
         public

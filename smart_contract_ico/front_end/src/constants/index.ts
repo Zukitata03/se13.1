@@ -1,10 +1,10 @@
-import { IPackage, TOKEN } from "../_types_";
+import { IPackage, TOKEN } from "@/_types_";
 
 export const packages: IPackage[] = [
     {
         key: 'bnb-01',
         name: 'BNB PACKAGE 01',
-        amount: 20,
+        amount: 1000,
         bg: 'bnb-bg.jpg',
         icon: 'bnb.png',
         token: TOKEN.BNB,
@@ -12,7 +12,7 @@ export const packages: IPackage[] = [
     {
         key: 'bnb-02',
         name: 'BNB PACKAGE 02',
-        amount: 30,
+        amount: 2000,
         bg: 'bnb-bg.jpg',
         icon: 'bnb.png',
         token: TOKEN.BNB,
@@ -20,7 +20,7 @@ export const packages: IPackage[] = [
     {
         key: 'bnb-03',
         name: 'BNB PACKAGE 03',
-        amount: 10,
+        amount: 3000,
         bg: 'bnb-bg.jpg',
         icon: 'bnb.png',
         token: TOKEN.BNB,
