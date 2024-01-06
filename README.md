@@ -17,3 +17,6 @@
 - Sử dụng [Remix - Ethereum IDE](https://remix.ethereum.org/)** và [Hardhat](https://hardhat.org/)
 - Sử dụng thư viện [OpenZeppelin](https://www.openzeppelin.com/) cho hai chuẩn **ERC20** và **ERC721 ** thực hiện dẽ dàng hơn.
 - Sử dụng ví MetaMask, Binance Smart Chain Testnet và Ethereum Sepolia Testnet.
+
+## Video Demo
+- https://youtu.be/F6zbcu4m_3U
